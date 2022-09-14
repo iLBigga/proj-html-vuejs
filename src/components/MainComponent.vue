@@ -4,6 +4,7 @@
         <MainSection1/>
         <MainSection2/>
         <MainSection3/>
+        <MainSection4/>
     </main>
 </template>
 
@@ -14,6 +15,7 @@ import MainJumbo from './MainSections/MainJumbo.vue';
 import MainSection1 from './MainSections/MainSection1.vue'
 import MainSection2 from './MainSections/MainSection2.vue'
 import MainSection3 from './MainSections/MainSection3.vue'
+import MainSection4 from './MainSections/MainSection4.vue'
 
 export default {
     name: 'MainComponent',
@@ -22,6 +24,7 @@ export default {
         MainSection1,
         MainSection2,
         MainSection3,
+        MainSection4,
     }
 }
 </script>

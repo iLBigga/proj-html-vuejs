@@ -22,6 +22,7 @@ export default {
     .jumbo_section {
         background-image: url('../../assets/images/hero-07-2x.jpg');
         background-size: cover;
+        background-position: center;
         height: 800px;
     }
 
@@ -30,7 +31,7 @@ export default {
         width: 690px;
         background-color: blue;
         position: absolute;
-        left: 1260px;
-        bottom: 459px;
+        right: 0px;
+        bottom: 476px;
     }
 </style>
