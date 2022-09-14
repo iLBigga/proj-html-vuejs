@@ -30,7 +30,6 @@ export default {
 
 
 <style lang="scss" scoped>
-    @import '../style/general.scss';
 
     .xl_container {
         position: absolute;

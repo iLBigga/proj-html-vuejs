@@ -18,7 +18,6 @@ export default {
 
 
 <style lang="scss">
-    @import '../../style/general.scss';
     
     .jumbo_section {
         background-image: url('../../assets/images/hero-07-2x.jpg');
