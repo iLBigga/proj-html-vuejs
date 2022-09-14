@@ -4,7 +4,7 @@
             <figure>
                 <img :src="logo" alt="">
             </figure>      
-            <ul class="d-flex p-4 gap-5">
+            <ul class="d-flex gap-5 p-4">
                 <li>1</li>
                 <li>2</li>
                 <li>3</li>
@@ -32,13 +32,18 @@ export default {
 <style lang="scss" scoped>
     @import '../style/general.scss';
 
+    .xl_container {
+        position: absolute;
+        right: 0;
+        left: 0;
+        color: white;
+    }
+
     figure {
-        background-color: green;
         width: 138px;
     }
 
     ul{
         list-style: none;
-        background-color: blue;
     }
 </style>
