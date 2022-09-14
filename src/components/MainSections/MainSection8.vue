@@ -32,12 +32,12 @@ export default {
 
 <style lang="scss" scoped>
     .mainSection_8{
-        height: 1092px;
+        height: 1010px;
         background-color: hotpink;
 
             .sm_container{
                 background-color: seagreen;
-                height: 1092px;
+                height: 1010px;
             }
     }
 </style>

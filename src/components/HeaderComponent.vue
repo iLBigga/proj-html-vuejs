@@ -7,7 +7,7 @@
 
 <script>
 
-import NavBar from './HeaderNavBar.vue'
+import NavBar from './HeaderSections/HeaderNavBar.vue'
 
 export default {
     name: 'HeaderComponent',
