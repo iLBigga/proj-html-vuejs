@@ -3,9 +3,9 @@
         
         <div class="jumbo_container d-flex align-items-end">
             <div class="col-10 d-flex flex-column gap-3 text_container">
-                <h1>{{title}}</h1>
-                <p class="paragrafo">{{paragraph}}</p>
-                <p class="author">{{paragraphAuthor}}</p>
+                <h1>{{data.title}}</h1>
+                <p class="paragrafo">{{data.paragraph}}</p>
+                <p class="author">{{data.author}}</p>
                 <div class="button_container d-flex">
                     <button><font-awesome-icon icon="fa-solid fa-arrow-left" /></button>
                     <button><font-awesome-icon icon="fa-solid fa-arrow-right" /></button>
@@ -27,9 +27,10 @@ export default {
         ShopComponent,
     },
     props: {
-        title: String,
-        paragraph: String,
-        paragraphAuthor: String,
+        // title: String,
+        // paragraph: String,
+        // paragraphAuthor: String,
+        data: Object,
     },
     data() {
         return {
