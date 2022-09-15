@@ -1,5 +1,5 @@
 <template>
-    <div class="mainSection_2">
+    <div class="mainSection_partner">
         <div class="sm_container">
             <div class="d-flex justify-content-evenly align-item-center justify-content-avenly">
                 <figure v-for="(el ,i) in data" :key="i"><img :src="el" alt=""></figure>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'MainSection2',
+    name: 'MainSectionPartner',
     props: {
         data: Array,
     },
@@ -23,7 +23,7 @@ export default {
 
 @import '../../style/general.scss';
 
-    .mainSection_2{
+    .mainSection_partner{
         background-color: $beige;
         padding: 65px 0 50px 0;
 

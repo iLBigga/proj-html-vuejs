@@ -2,8 +2,8 @@
     <main>
         <MainJumbo :data="jumboData"/>
         <MainSectionAbout :data="aboutData" />
-        <MainSectionPartner :data="partnerImg"/>
-        <MainSection3/>
+        <MainSectionPartner :data="partnerData"/>
+        <MainSectionAudiobook :data="audioBookData"/>
         <MainSection4/>
         <MainSection5/>
         <MainSection6/>
@@ -18,7 +18,7 @@
 import MainJumbo from './MainSections/MainJumbo.vue';
 import MainSectionAbout from './MainSections/MainSectionAbout.vue'
 import MainSectionPartner from './MainSections/MainSectionPartner.vue'
-import MainSection3 from './MainSections/MainSection3.vue'
+import MainSectionAudiobook from './MainSections/MainSectionAudiobook.vue'
 import MainSection4 from './MainSections/MainSection4.vue'
 import MainSection5 from './MainSections/MainSection5.vue'
 import MainSection6 from './MainSections/MainSection6.vue'
@@ -34,7 +34,7 @@ export default {
         MainJumbo,
         MainSectionAbout,
         MainSectionPartner,
-        MainSection3,
+        MainSectionAudiobook,
         MainSection4,
         MainSection5,
         MainSection6,
@@ -50,15 +50,27 @@ export default {
             aboutData: aboutData,
 
             // SECTION "Partner"
-            partnerImg: [
+            partnerData: [
                 require('../assets/images/ebay-logotan-2x-600x197.png'),
                 require('../assets/images/audible-logotan-2x.png'),
                 require('../assets/images/bb-logotan-2x.png'),
                 require('../assets/images/kindlefire-logo.png')
+            ],
 
-            ]
+            // SECTION "AudioBook"
+            audioBookData: {
+                appPreview: require('../assets/images/audible-app-2x.png'),
+                title: 'New Audiobook',
+                subTitle: 'no time to read? no problem. listen to it',
+                paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt. Maecenas eleifend congue cursus.',
+                logos: {
+                    firstLogo: require('../assets/images/audible-logo-color.png'),
+                    secondLogo: require('../assets/images/bn-logo-color.png'),
+                    thirdLogo: require('../assets/images/kindle-logo-color.png'),
+                }
+            }
 
-            
+
 
         }
     }

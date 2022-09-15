@@ -14,7 +14,7 @@ const aboutData = {
     button: 'Meet The Author',
 }
 
-// SECTION 2 "Partner"
+
 
 
 export {jumboData, aboutData}
