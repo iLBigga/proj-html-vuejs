@@ -23,7 +23,7 @@ export default {
         background-image: url('../../assets/images/hero-07-2x.jpg');
         background-size: cover;
         background-position: center;
-        height: 1700px;
+        height: 100vh;
     }
 
     .shop_disclamer {

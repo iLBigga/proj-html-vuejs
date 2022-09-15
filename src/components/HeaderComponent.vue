@@ -1,6 +1,6 @@
 <template>
     <header>
-        <NavBar :logo="logo"/>
+        <NavBar :logo="logo" :navBarLinks="navBarLinks"/>
     </header>
 </template>
 
@@ -9,6 +9,16 @@
 
 import NavBar from './HeaderSections/HeaderNavBar.vue'
 
+const navBarLinks = [
+                'Home',
+                'About Me',
+                'Testimonials',
+                'My Blog',
+                'Meetups',
+                'Shop',
+                'Contact Me',
+            ]
+
 export default {
     name: 'HeaderComponent',
     components: {
@@ -16,7 +26,8 @@ export default {
     },
     data() {
         return {
-            logo: require('../assets/images/author-logo-round-small.png')
+            logo: require('../assets/images/author-logo-round-small.png'),
+            navBarLinks: navBarLinks,
         }
     }
 }
@@ -25,4 +36,7 @@ export default {
 
 <style lang="scss">
     @import '../style/general.scss';
+    header {
+        font-family: 'DM Sans', sans-serif;
+    }
 </style>
