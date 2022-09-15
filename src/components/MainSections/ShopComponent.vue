@@ -1,5 +1,5 @@
 <template>
-    <div class="shop_disclamer">
+    <div class="shop_card">
         <div class="d-flex">
             <div class="col-6">
                 <img src="../../assets/images/book-widget.png" alt="Amazon Kindle">
@@ -29,10 +29,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
-@import '../../style/variables.scss';
 
-    .shop_disclamer{
+@import '../../style/general.scss';
+
+    .shop_card{
         height: 400px;
         width: 700px;
         padding: 3.5rem;
