@@ -1,37 +1,98 @@
-8<template>
-    <div class="jumbo_section">
-        <div class="lg_container">
-            
+<template>
+    <div class="jumbo_section d-flex">
+        <div class="jumbo_container d-flex align-items-end">
+            <div class="col-10 d-flex flex-column gap-3 text_container">
+                <h1>{{title}}</h1>
+                <p class="paragrafo">{{paragraph}}</p>
+                <p class="author">{{paragraphAuthor}}</p>
+                <div class="button_container d-flex">
+                    <button><font-awesome-icon icon="fa-solid fa-arrow-left" /></button>
+                    <button><font-awesome-icon icon="fa-solid fa-arrow-right" /></button>
+                </div>
+            </div>
         </div>
-        <div class="shop_disclamer">
-
-        </div>
+        <ShopComponent :title="shopTitle" :author="shopAuthor" :paragraph="shopParagraph"/>
     </div>
 </template>
 
 
 <script>
+
+import ShopComponent from './ShopComponent.vue';
+
 export default {
-    name: 'MainJumbo'
+    name: 'MainJumbo',
+    components: {
+        ShopComponent,
+    },
+    props: {
+        title: String,
+        paragraph: String,
+        paragraphAuthor: String,
+    },
+    data() {
+        return {
+            // SHOP COMPONENT
+            shopTitle: 'Latest Book Release',
+            // Auto Uppercase
+            shopAuthor: 'd. vaughn autobiography',
+            shopParagraph: 'Vestibulum tristique turpis in ipsum egestas lobortis. Duis maximus bibendum volupat. Lorem ipsum dolor sit amet.'
+        };
+    },
 }
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+@import '../../style/general.scss';
     
     .jumbo_section {
         background-image: url('../../assets/images/hero-07-2x.jpg');
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 1000px;
+        
+
+            .jumbo_container {
+                padding-left: 145px;
+
+                    .text_container {
+                        padding-bottom: 230px;
+                    }
+            }
+
+            h1{
+                font-family: 'Kristi', cursive;
+                font-size: 6rem;
+                color: $orange;
+            }
+
+            .paragrafo{
+                font-family: 'DM Serif Display', serif;
+                color: white;
+                font-size: 50px;
+                line-height: 4.4rem;
+            }
+
+            .author{
+                color: grey;
+                font-style: italic;
+                font-size: 27px;
+            }
+
+            .button_container {
+                gap: 2px;
+
+                button{
+                    height: 45px;
+                    width: 45px;
+                    border: 0px;
+                    background-color: black;
+                    color: white;
+                }
+            }
     }
 
-    .shop_disclamer {
-        height: 400px;
-        width: 690px;
-        background-color: blue;
-        position: absolute;
-        right: 0px;
-        bottom: -424px;
-    }
+    
 </style>

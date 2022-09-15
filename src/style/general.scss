@@ -1,18 +1,30 @@
+// FONTS
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+// VARIABILI STILE
+@import './variables.scss';
+
 
 .xl_container {
-    max-width: 2252px;
+    max-width: 1900px;
     margin: 0 auto;
 }
 
 .lg_container {
-    max-width: 1500px;
+    max-width: 1478px;
     margin: 0 auto;
 }
 
 .sm_container {
     max-width: 1373px;
+    margin: 0 auto;
+}
+
+.jumbo_container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 

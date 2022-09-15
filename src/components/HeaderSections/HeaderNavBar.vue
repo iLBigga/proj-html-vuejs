@@ -32,6 +32,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@import '../../style/variables.scss';
+
 .xl_container {
   position: absolute;
   right: 0;
@@ -39,7 +41,7 @@ export default {
   color: white;
 
   figure {
-    width: 138px;
+    width: 180px;
   }
 
   ul {
@@ -57,8 +59,8 @@ export default {
       }
 
       &:first-child {
-        border-top: 5px solid orange;
-        color: orange;
+        border-top: 5px solid $light-orange;
+        color: $light-orange;
       }
     }
   }

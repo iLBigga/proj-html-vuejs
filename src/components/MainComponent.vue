@@ -1,6 +1,6 @@
 <template>
     <main>
-        <MainJumbo/>
+        <MainJumbo :title="titleJumbo" :paragraph="paragraphJumbo" :paragraphAuthor="paragraphAuthorJumbo"/>
         <MainSection1/>
         <MainSection2/>
         <MainSection3/>
@@ -37,6 +37,14 @@ export default {
         MainSection6,
         MainSection7,
         MainSection8,
+    },
+    data() {
+        return {
+            // JUMBO SECTION
+            titleJumbo: 'Damon Vaughn',
+            paragraphJumbo: 'Best-selling author and the most influential public intellectual in the Wwstern world right now.',
+            paragraphAuthorJumbo: '- The New York Times'
+        }
     }
 }
 </script>
