@@ -6,7 +6,7 @@
         <MainSectionAudiobook :data="audioBookData"/>
         <MainSection4/>
         <MainSection5/>
-        <MainSection6/>
+        <MainSectionNewsLetter :data="newsletterData"/>
         <MainSection7/>
         <MainSection8/>
     </main>
@@ -21,12 +21,12 @@ import MainSectionPartner from './MainSections/MainSectionPartner.vue'
 import MainSectionAudiobook from './MainSections/MainSectionAudiobook.vue'
 import MainSection4 from './MainSections/MainSection4.vue'
 import MainSection5 from './MainSections/MainSection5.vue'
-import MainSection6 from './MainSections/MainSection6.vue'
+import MainSectionNewsLetter from './MainSections/MainSectionNewsLetter.vue'
 import MainSection7 from './MainSections/MainSection7.vue'
 import MainSection8 from './MainSections/MainSection8.vue'
 
 
-import {jumboData, aboutData} from '../mainMyData'
+import {jumboData, aboutData, newsletterData} from '../mainMyData'
 
 export default {
     name: 'MainComponent',
@@ -37,7 +37,7 @@ export default {
         MainSectionAudiobook,
         MainSection4,
         MainSection5,
-        MainSection6,
+        MainSectionNewsLetter,
         MainSection7,
         MainSection8,
     },
@@ -68,7 +68,10 @@ export default {
                     secondLogo: require('../assets/images/bn-logo-color.png'),
                     thirdLogo: require('../assets/images/kindle-logo-color.png'),
                 }
-            }
+            },
+
+            //SECTION "Newsletter"
+            newsletterData: newsletterData,
 
 
 

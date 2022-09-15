@@ -6,7 +6,7 @@ const jumboData = {
     author: '- The New York Times',
 }
 
-// SECTION 1 "About"
+// SECTION "About"
 
 const aboutData = {
     title: 'More About Damon Vaughn',
@@ -14,7 +14,14 @@ const aboutData = {
     button: 'Meet The Author',
 }
 
+//  SECTION "Newsletter"
+const newsletterData = {
+    title: 'Subcribe To My Newsletter',
+    subTitle: 'be notified about book signing tour dates',
+    placeholder: '    insert your email...',
+    button: 'Subscribe',
+    paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.'
+}
 
 
-
-export {jumboData, aboutData}
+export {jumboData, aboutData, newsletterData}
