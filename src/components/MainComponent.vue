@@ -2,7 +2,7 @@
     <main>
         <MainJumbo :data="jumboData"/>
         <MainSectionAbout :data="aboutData" />
-        <MainSection2/>
+        <MainSectionPartner :data="partnerImg"/>
         <MainSection3/>
         <MainSection4/>
         <MainSection5/>
@@ -17,7 +17,7 @@
 
 import MainJumbo from './MainSections/MainJumbo.vue';
 import MainSectionAbout from './MainSections/MainSectionAbout.vue'
-import MainSection2 from './MainSections/MainSection2.vue'
+import MainSectionPartner from './MainSections/MainSectionPartner.vue'
 import MainSection3 from './MainSections/MainSection3.vue'
 import MainSection4 from './MainSections/MainSection4.vue'
 import MainSection5 from './MainSections/MainSection5.vue'
@@ -33,7 +33,7 @@ export default {
     components: {
         MainJumbo,
         MainSectionAbout,
-        MainSection2,
+        MainSectionPartner,
         MainSection3,
         MainSection4,
         MainSection5,
@@ -48,6 +48,17 @@ export default {
 
             // SECTION "About"
             aboutData: aboutData,
+
+            // SECTION "Partner"
+            partnerImg: [
+                require('../assets/images/ebay-logotan-2x-600x197.png'),
+                require('../assets/images/audible-logotan-2x.png'),
+                require('../assets/images/bb-logotan-2x.png'),
+                require('../assets/images/kindlefire-logo.png')
+
+            ]
+
+            
 
         }
     }

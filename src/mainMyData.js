@@ -6,12 +6,15 @@ const jumboData = {
     author: '- The New York Times',
 }
 
-// SECTION "About"
+// SECTION 1 "About"
 
 const aboutData = {
     title: 'More About Damon Vaughn',
     paragraph: 'Damon Vaughn is a professor of psychology at the Univeristy of Toronto, a clinical psychologist and the author of the multi-million copy bestseller "The stiry of my life."',
     button: 'Meet The Author',
 }
+
+// SECTION 2 "Partner"
+
 
 export {jumboData, aboutData}
