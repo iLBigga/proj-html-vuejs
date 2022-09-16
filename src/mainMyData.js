@@ -79,6 +79,7 @@ const eventsData = {
         },
     ],
 };
+
 //  SECTION "Newsletter"
 
 const newsletterData = {
@@ -89,6 +90,32 @@ const newsletterData = {
     paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.'
 };
 
+// SECTION "Discover"
+
+const discoverData = {
+    title: 'Dig A Little Deeper Into Damon Vaughn',
+    subTitle: 'find out more about the author himself',
+    cards: [
+        {  
+            img: 'box-1.jpg',
+            title: 'About Me',
+            subTitle: 'Vestibulum ante ipsum primis'
+        },
+        {  
+            img: 'box-4.jpg',
+            title: 'My Latest Book',
+            subTitle: 'Vestibulum ante ipsum primis',
+        },
+        {
+            img: 'box-3.jpg',
+            title: 'Book Signing',
+            subTitle: 'Vestibulum ante ipsum primis',
+        },
+    ],
+};
 
 
-export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData}
+
+
+
+export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData}
