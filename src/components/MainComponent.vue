@@ -26,7 +26,7 @@ import MainSectionDiscover from './MainSections/MainSectionDiscover.vue'
 import MainSectionRecentArticles from './MainSections/MainSectionRecentArticles.vue'
 
 
-import {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData, articlesData} from '../mainMyData'
+import {jumboData, aboutData, partnerData, audioBookData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData, articlesData} from '../mainMyData'
 
 export default {
     name: 'MainComponent',
@@ -50,25 +50,10 @@ export default {
             aboutData: aboutData,
 
             // SECTION "Partner"
-            partnerData: [
-                require('../assets/images/ebay-logotan-2x-600x197.png'),
-                require('../assets/images/audible-logotan-2x.png'),
-                require('../assets/images/bb-logotan-2x.png'),
-                require('../assets/images/kindlefire-logo.png')
-            ],
+            partnerData: partnerData,
 
             // SECTION "AudioBook"
-            audioBookData: {
-                appPreview: require('../assets/images/audible-app-2x.png'),
-                title: 'New Audiobook',
-                subTitle: 'no time to read? no problem. listen to it',
-                paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt. Maecenas eleifend congue cursus.',
-                logos: {
-                    firstLogo: require('../assets/images/audible-logo-color.png'),
-                    secondLogo: require('../assets/images/bn-logo-color.png'),
-                    thirdLogo: require('../assets/images/kindle-logo-color.png'),
-                }
-            },
+            audioBookData: audioBookData,
 
             // SECTION "Critics"
             criticsData: criticsData,

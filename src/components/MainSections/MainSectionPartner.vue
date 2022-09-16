@@ -2,7 +2,7 @@
     <div class="mainSection_partner">
         <div class="sm_container">
             <div class="d-flex justify-content-evenly align-item-center justify-content-avenly">
-                <figure v-for="(el ,i) in data" :key="i"><img :src="el" alt=""></figure>
+                <figure v-for="(el ,i) in data" :key="i"><img :src="findImg(el)" alt=""></figure>
             </div>
         </div>
     </div>
@@ -10,11 +10,17 @@
 
 
 <script>
+
+import {findImg} from '../../myFunctions.js'
+
 export default {
     name: 'MainSectionPartner',
     props: {
         data: Array,
     },
+    methods: {
+        findImg,
+    }
 }
 </script>
 

@@ -2,7 +2,7 @@
     <div class="mainSection_audioBook">
         <div class="sm_container d-flex">
             <div class="col-6 align-self-end text-center">
-                <img class="app_screen" :src="data.appPreview" alt="App Preview">
+                <img class="app_screen" :src="findImg(data.appPreview)" alt="App Preview">
             </div>
             <div class="col-6 d-flex flex-column gap-2 right_col align-self-center text-center">
                 <div>
@@ -11,7 +11,7 @@
                 </div>
                 <p class="paragraph px-5">{{data.paragraph}}</p>
                 <div class="d-flex justify-content-between">
-                    <figure v-for="(logo ,i) in data.logos" :key="i"><img :src="logo" alt=""></figure>
+                    <figure v-for="(logo ,i) in data.logos" :key="i"><img :src="findImg(logo)" alt=""></figure>
                 </div>
             </div>
         </div>
@@ -20,10 +20,16 @@
 
 
 <script>
+
+import {findImg} from '../../myFunctions.js'
+
 export default {
     name: 'MainSectionAudiobook',
     props: {
         data: Object,
+    },
+    methods: {
+        findImg,
     }
 }
 </script>

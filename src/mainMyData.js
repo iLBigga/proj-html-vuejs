@@ -14,13 +14,36 @@ const aboutData = {
     button: 'Meet The Author',
 };
 
+// SECTION "Partner" 
+
+const partnerData = [
+    'ebay-logotan-2x-600x197.png',
+    'audible-logotan-2x.png',
+    'bb-logotan-2x.png',
+    'kindlefire-logo.png'
+];
+
+// SECTION "AudioBook"
+
+const audioBookData = {
+    appPreview: 'audible-app-2x.png',
+    title: 'New Audiobook',
+    subTitle: 'no time to read? no problem. listen to it',
+    paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt. Maecenas eleifend congue cursus.',
+    logos: {
+        firstLogo: 'audible-logo-color.png',
+        secondLogo: 'bn-logo-color.png',
+        thirdLogo: 'kindle-logo-color.png',
+    }
+};
+
 // SECTION "Critics"
 
 const criticsData = {
     title: 'What The Critics Say',
     subTitle: 'testimonials from around the world',
     button: 'Read All Testimonials'
-}
+};
 
 const criticsCardJumbo = {
     title: 'Best Author Of His Generation',
@@ -32,7 +55,7 @@ const criticsCardJumbo = {
         name: 'Justine Kilpatrick',
         publisher: 'The New York Times',
     }
-}
+};
 
 const criticsCard = [
     {
@@ -144,4 +167,4 @@ const articlesData = {
 
 
 
-export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData, articlesData}
+export {jumboData, aboutData, partnerData, audioBookData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData, articlesData}
