@@ -11,8 +11,23 @@
       <!-- LISTA LINK -->
 
       <ul class="d-flex gap-5 align-items-center">
-        <li v-for="(link, i) in navBarLinks" :key="i"><a href="#">{{ link }}</a></li>
-        <li><a href="#"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></a></li>
+
+        <li v-for="(link, i) in navBarLinks" :key="i">
+
+          <a href="#">
+            {{ link }}
+          </a>
+
+        </li>
+
+        <li>
+
+          <a href="#">
+            <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+          </a>
+
+        </li>
+        
       </ul>
 
     </div>

@@ -9,15 +9,34 @@
                 <div class="d-flex">
                     <!-- ABOUT ME -->
                     <div class="col-3 about_me">
-                        <h4 class="title">{{firstList.title}}</h4>
-                        <p>{{firstList.paragraph}}</p>
+
+                        <h4 class="title">
+                            {{firstList.title}}
+                        </h4>
+
+                        <p>
+                            {{firstList.paragraph}}
+                        </p>
+
                     </div>
                     <!-- LINKS -->
                     <div class="col-3 useful_links">
-                        <h4 class="title">useful <i class="fas fa-external-link-square-alt    "></i></h4>
+
+                        <h4 class="title">
+                            useful <i class="fas fa-external-link-square-alt"></i>
+                        </h4>
+
                         <ul>
-                            <li v-for="(el, i) in secondList" :key="i"><font-awesome-icon icon="fa-solid fa-angle-right" /><a href="#">{{el}}</a></li>
+                            <li v-for="(el, i) in secondList" :key="i">
+
+                                <font-awesome-icon icon="fa-solid fa-angle-right" />
+                                <a href="#">
+                                    {{el}}
+                                </a>
+                            </li>
+                            
                         </ul>
+
                     </div>
                     <!-- CONTACT INFO -->
                     <div class="col-4 contact_info">
