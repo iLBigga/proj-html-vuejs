@@ -15,13 +15,21 @@
             <div class="d-flex justify-content-betweenp-4">
                 <div v-for="(card, i) in data.cards" :key="i" class="custom_card col-4">
                     <!-- Card Img -->
+
                     <div class="card_top">
                         <img :src="findImg(card.img)" alt="">
                     </div>
                     <!-- Card Text -->
                     <div class="card_bottom text-center">
-                        <h5 class="title">{{card.title}}</h5>
-                        <p class="paragraph">{{card.paragraph}}</p>
+
+                        <h5 class="title">
+                            {{card.title}}
+                        </h5>
+
+                        <p class="paragraph">
+                            {{card.paragraph}}
+                        </p>
+                        
                     </div>
                 </div>
             </div>  

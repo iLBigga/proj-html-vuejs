@@ -4,8 +4,15 @@
             <!-- SECTION TITLE -->
             <div class="d-flex flex-column text-center gap-4">
                 <div>
-                    <h1 class="title ">{{data.title}}</h1>
-                    <p class="subTitle">{{data.subTitle}}</p>
+
+                    <h1 class="title ">
+                        {{data.title}}
+                    </h1>
+
+                    <p class="subTitle">
+                        {{data.subTitle}}
+                    </p>
+
                 </div>
 
                 <!-- INPUT SECTION -->
@@ -13,7 +20,11 @@
                     <input class="text_input" type="text" :placeholder="data.placeholder">
                     <input class="button_input" type="button" :value="data.button">
                 </div>
-                <p class="paragraph">{{data.paragraph}}</p>
+
+                <p class="paragraph">
+                    {{data.paragraph}}
+                </p>
+                
             </div>   
         </div>
     </div>

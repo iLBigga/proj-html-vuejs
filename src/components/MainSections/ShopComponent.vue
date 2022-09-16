@@ -5,14 +5,31 @@
                 <img src="../../assets/images/book-widget.png" alt="Amazon Kindle">
             </div>
             <div class="col-6 align-self-center px-2">
-                <h4 class="title">{{title}}</h4>
-                <p class="author">{{author}}</p>
-                <p class="paragraph">{{paragraph}}</p>
+
+                <h4 class="title">
+                    {{title}}
+                </h4>
+
+                <p class="author">
+                    {{author}}
+                </p>
+
+                <p class="paragraph">
+                    {{paragraph}}
+                </p>
+
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <button class="button button_left"><font-awesome-icon icon="fa-brands fa-amazon" /> Buy On Amazon</button>
-            <button class="button button_right"><font-awesome-icon icon="fa-brands fa-apple" /> Buy On AppStore</button>
+            
+            <button class="button button_left">
+                <font-awesome-icon icon="fa-brands fa-amazon" /> Buy On Amazon
+            </button>
+
+            <button class="button button_right">
+                <font-awesome-icon icon="fa-brands fa-apple" /> Buy On AppStore
+            </button>
+
         </div>
     </div>
 </template>

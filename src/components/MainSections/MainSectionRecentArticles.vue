@@ -6,8 +6,15 @@
 
             <div class="d-flex justify-content-between align-items-center section_title">
                 <div>
-                    <h1 class="title">{{data.title}}</h1>
-                    <p class="subtitle">{{data.subTitle}}</p>
+
+                    <h1 class="title">
+                        {{data.title}}
+                    </h1>
+
+                    <p class="subtitle">
+                        {{data.subTitle}}
+                    </p>
+
                 </div>
                 <div>
                     <input class="button" type="button" :value="data.button" id="">
@@ -23,13 +30,24 @@
 
                 <div class="col-8 col_left">
                     <div class="custom_card">
+                        <!-- Card Imgage -->
                         <img :src="findImg(data.jumboCard.img)" alt="data.jumboCard.img">
                         <div class="card_bottom">
+                            <!-- Card Text -->
                             <div class="card_title">
-                                <h5 class="title">{{data.jumboCard.title}}</h5>
-                                <p class="author">{{data.jumboCard.author}}</p>
+                                <h5 class="title">
+                                    {{data.jumboCard.title}}
+                                </h5>
+
+                                <p class="author">
+                                    {{data.jumboCard.author}}
+                                </p>
+
                             </div>
-                            <p class="paragraph">{{data.jumboCard.paragraph}}</p>
+
+                            <p class="paragraph">
+                                {{data.jumboCard.paragraph}}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -43,8 +61,15 @@
                         <img :src="findImg(card.img)" :alt="card.img">
                         <!-- Card text -->
                         <div class="card_text">
-                            <h5 class="title">{{card.title}}</h5>
-                            <p class="date">{{card.date}}</p>
+
+                            <h5 class="title">
+                                {{card.title}}
+                            </h5>
+
+                            <p class="date">
+                                {{card.date}}
+                            </p>
+                            
                         </div>
                     </div>
                 </div>

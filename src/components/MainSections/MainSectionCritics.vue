@@ -4,9 +4,17 @@
             <!-- SECTION TITLE -->
             <div class="d-flex justify-content-between align-items-center section_title">
                 <div>
-                    <h1 class="title">{{data.title}}</h1>
-                    <p class="subtitle">{{data.subTitle}}</p>
+
+                    <h1 class="title">
+                        {{data.title}}
+                    </h1>
+
+                    <p class="subtitle">
+                        {{data.subTitle}}
+                    </p>
+
                 </div>
+
                 <div>
                     <input class="button" type="button" :value="data.button">
                 </div>
@@ -19,11 +27,33 @@
                  <!-- LEFT COL -->
 
                 <div class="d-flex gap-3 flex-column left_col">
-                    <h2 class="title">{{jumboCard.title}}</h2>
-                    <p class="subtitle">{{jumboCard.subTitle}}</p>
-                    <p class="paragraph">{{jumboCard.firstParagraph}}</p>
-                    <p class="paragraph">{{jumboCard.secondParagraph}}</p>
-                    <p class="author d-flex align-items-center"><img class="logo_publisher" :src="findImg(jumboCard.author.logo)" alt="The Guardian">{{jumboCard.author.name}} <span class="publisher">{{jumboCard.author.publisher}}</span> </p>
+
+                    <h2 class="title">
+                        {{jumboCard.title}}
+                    </h2>
+
+                    <p class="subtitle">
+                        {{jumboCard.subTitle}}
+                    </p>
+
+                    <p class="paragraph">
+                        {{jumboCard.firstParagraph}}
+                    </p>
+
+                    <p class="paragraph">
+                        {{jumboCard.secondParagraph}}
+                    </p>
+
+                    <p class="author d-flex align-items-center">
+                        <img class="logo_publisher" :src="findImg(jumboCard.author.logo)" alt="The Guardian">
+
+                        {{jumboCard.author.name}} 
+
+                        <span class="publisher">
+                            {{jumboCard.author.publisher}}
+                        </span> 
+
+                    </p>
                 </div>
 
                 <!-- RIGHT COL -->
@@ -33,11 +63,30 @@
                     <div v-for="(card, i) in cards" :key="i" class="custom_card">
                         <!-- Card Text -->
                         <div class="card_text">
-                            <h4 class="title">{{card.title}}</h4>
-                            <p class="paragraph">{{card.paragraph}}</p>
+
+                            <h4 class="title">
+                                {{card.title}}
+                            </h4>
+
+                            <p class="paragraph">
+                                {{card.paragraph}}
+                            </p>
+
                             <div class="triangle"></div>
                         </div>
-                        <p class="author d-flex align-items-center"><img class="logo_publisher" :src="findImg(card.author.logo)" :alt="card.author.logo">{{card.author.name}} <span class="publisher">{{card.author.publisher}}</span></p>
+                        
+                        <p class="author d-flex align-items-center">
+
+                            <img class="logo_publisher" :src="findImg(card.author.logo)" :alt="card.author.logo">
+
+                            {{card.author.name}} 
+
+                            <span class="publisher">
+                                {{card.author.publisher}}
+                            </span>
+
+                        </p>
+
                     </div>
                 </div> 
                   

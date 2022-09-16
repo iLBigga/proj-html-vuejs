@@ -2,8 +2,15 @@
     <div class="mainSection_About">
         <div class="sm_container ">
             <div class="text-center d-flex flex-column justify-content-center gap-5">
-                <h1>{{data.title}}</h1>
-                <p>{{data.paragraph}}</p>
+                
+                <h1>
+                    {{data.title}}
+                </h1>
+
+                <p>
+                    {{data.paragraph}}
+                </p>
+
                 <div>
                     <input type="button" name="button" :value="data.button">
                 </div>

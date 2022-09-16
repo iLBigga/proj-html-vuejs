@@ -2,13 +2,24 @@
     <div class="jumbo_section d-flex">
         <div class="jumbo_container d-flex align-items-end">
             <div class="col-10 d-flex flex-column gap-3 text_container">
-                <h1 class="jumbo_title">{{data.title}}</h1>
-                <p class="jumbo_paragrafo">{{data.paragraph}}</p>
-                <p class="jumbo_author">{{data.author}}</p>
+                
+                <h1 class="jumbo_title">
+                    {{data.title}}
+                </h1>
+
+                <p class="jumbo_paragrafo">
+                    {{data.paragraph}}
+                </p>
+
+                <p class="jumbo_author">
+                    {{data.author}}
+                </p>
+
                 <div class="button_container d-flex">
                     <button><font-awesome-icon icon="fa-solid fa-arrow-left" /></button>
                     <button><font-awesome-icon icon="fa-solid fa-arrow-right" /></button>
                 </div>
+
             </div>
         </div>
         <ShopComponent :title="shopTitle" :author="shopAuthor" :paragraph="shopParagraph"/>

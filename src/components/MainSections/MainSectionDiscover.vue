@@ -3,8 +3,15 @@
         <div class="sm_container">    
         <!-- SECTION TITLE -->
             <div class="d-flex flex-column text-center">
-                <h1 class="title">{{data.title}}</h1>
-                <p class="subtitle">{{data.subTitle}}</p>
+
+                <h1 class="title">
+                    {{data.title}}
+                </h1>
+
+                <p class="subtitle">
+                    {{data.subTitle}}
+                </p>
+
             </div>
 
             <!-- MAIN SECTION -->
@@ -17,9 +24,17 @@
                         <img :src="findImg(card.img)" alt="">
                         <!-- Card text -->
                         <div class="d-flex align-items-center flex-column card_text text-center">
-                            <h5 class="title">{{card.title}}</h5>
+
+                            <h5 class="title">
+                                {{card.title}}
+                            </h5>
+
                             <hr>
-                            <p class="subtitle">{{card.subTitle}}</p>
+
+                            <p class="subtitle">
+                                {{card.subTitle}}
+                            </p>
+                            
                         </div>                     
                     </div>
                 </div>
