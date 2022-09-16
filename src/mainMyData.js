@@ -14,15 +14,6 @@ const aboutData = {
     button: 'Meet The Author',
 };
 
-//  SECTION "Newsletter"
-const newsletterData = {
-    title: 'Subcribe To My Newsletter',
-    subTitle: 'be notified about book signing tour dates',
-    placeholder: '    insert your email...',
-    button: 'Subscribe',
-    paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.'
-};
-
 // SECTION "Critics"
 
 const criticsData = {
@@ -65,6 +56,39 @@ const criticsCard = [
     },
 ];
 
+// SECTION "Events"
+
+const eventsData = {
+    title: 'Upcoming Events',
+    subTitle: 'meet the author in person',
+    cards: [
+        {
+            img: 'event-05.jpg',
+            title: 'Chicago Book Signing',
+            paragraph: 'Marius blandit aliquet elit, eget tincidunt nibh pulvinar a. Mariud blandit aliquet elit. eget tincidunt nibh pulvinar a nulla.'
+        },
+        {
+            img: 'event-04.jpg',
+            title: 'Meet Greet With Amanda',
+            paragraph: 'Marius blandit aliquet elit, eget tincidunt nibh pulvinar a. Mariud blandit aliquet elit. eget tincidunt nibh pulvinar a nulla.'
+        },
+        {
+            img: 'event-07.jpg',
+            title: 'Open Book: Dialogues',
+            paragraph: 'Marius blandit aliquet elit, eget tincidunt nibh pulvinar a. Mariud blandit aliquet elit. eget tincidunt nibh pulvinar a nulla.'
+        },
+    ],
+};
+//  SECTION "Newsletter"
+
+const newsletterData = {
+    title: 'Subcribe To My Newsletter',
+    subTitle: 'be notified about book signing tour dates',
+    placeholder: '    insert your email...',
+    button: 'Subscribe',
+    paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.'
+};
 
 
-export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard}
+
+export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData}
