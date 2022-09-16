@@ -3,9 +3,9 @@
         
         <div class="jumbo_container d-flex align-items-end">
             <div class="col-10 d-flex flex-column gap-3 text_container">
-                <h1>{{data.title}}</h1>
-                <p class="paragrafo">{{data.paragraph}}</p>
-                <p class="author">{{data.author}}</p>
+                <h1 class="jumbo_title">{{data.title}}</h1>
+                <p class="jumbo_paragrafo">{{data.paragraph}}</p>
+                <p class="jumbo_author">{{data.author}}</p>
                 <div class="button_container d-flex">
                     <button><font-awesome-icon icon="fa-solid fa-arrow-left" /></button>
                     <button><font-awesome-icon icon="fa-solid fa-arrow-right" /></button>
@@ -60,25 +60,25 @@ export default {
                 padding-left: 145px;
 
                     .text_container {
-                        padding-bottom: 230px;
+                        padding-bottom: 310px;
                     }
             }
 
-            h1{
+            .jumbo_title{
                 font-family: 'Kristi', cursive;
                 font-size: 6rem;
                 color: $orange;
             }
 
-            .paragrafo{
+            .jumbo_paragrafo{
                 font-family: 'DM Serif Display', serif;
                 color: white;
                 font-size: 50px;
                 line-height: 4.4rem;
             }
 
-            .author{
-                color: grey;
+            .jumbo_author{
+                color: $grey;
                 font-style: italic;
                 font-size: 27px;
             }

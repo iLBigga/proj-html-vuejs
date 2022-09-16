@@ -44,10 +44,9 @@ export default {
             }
 
             .author{
-                color: $orange;
-                text-transform: uppercase;
-                font-weight: 500;
-            }
+               @extend %subtitle_orange;
+               letter-spacing: 1px;
+            }   
 
             .paragraph{
                 color: $grey;

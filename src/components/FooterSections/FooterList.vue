@@ -8,19 +8,19 @@
                 </figure>
                 <!-- ABOUT ME -->
                 <div class="col-3 about_me">
-                    <h4>{{firstList.title}}</h4>
+                    <h4 class="title">{{firstList.title}}</h4>
                     <p>{{firstList.paragraph}}</p>
                 </div>
                 <!-- LINKS -->
                 <div class="col-3 useful_links">
-                    <h4>useful <i class="fas fa-external-link-square-alt    "></i></h4>
+                    <h4 class="title">useful <i class="fas fa-external-link-square-alt    "></i></h4>
                     <ul>
                         <li v-for="(el, i) in secondList" :key="i"><font-awesome-icon icon="fa-solid fa-angle-right" /><a href="#">{{el}}</a></li>
                     </ul>
                 </div>
                 <!-- CONTACT INFO -->
                 <div class="col-3 contact_info">
-                    <h4>contact info</h4>
+                    <h4 class="title">contact info</h4>
                     <ul>
                         <li v-for="(el, i) in thirdList" :key="i">{{el}}</li>
                     </ul>
@@ -68,6 +68,19 @@ export default {
         padding: 150px 0 50px 0;
         color: white;
 
+        li{
+            line-height: 33px;
+
+                a{
+                    padding-left: 1.1rem;
+                    color: $light-grey;
+
+                        &:hover{
+                            color: $light-orange;
+                        }
+                }
+        }
+
         .main_footer{
             gap: 4rem;
         }
@@ -92,20 +105,11 @@ export default {
             color: $light-grey;
         }
 
-        h4{
+        .title{
             text-transform: uppercase;
             font-family: 'DM Serif Display', serif;  
             padding-bottom: 35px;
-        }
-
-
-        li{
-            line-height: 33px;
-
-                a{
-                    padding-left: 1.1rem;
-                }
-        }
+        }        
 
         .icon{
             color: lightgray;

@@ -3,8 +3,8 @@
         <div class="sm_container">
             <div class="d-flex justify-content-between align-items-center section_title">
                 <div>
-                    <h1>{{data.title}}</h1>
-                    <p>{{data.subTitle}}</p>
+                    <h1 class="title">{{data.title}}</h1>
+                    <p class="subtitle">{{data.subTitle}}</p>
                 </div>
                 <div>
                     <input class="button" type="button" :value="data.button" id="">
@@ -17,8 +17,8 @@
                         <img :src="findImg(data.jumboCard.img)" alt="data.jumboCard.img">
                         <div class="card_bottom">
                             <div class="card_title">
-                                <h5>{{data.jumboCard.title}}</h5>
-                                <p>{{data.jumboCard.author}}</p>
+                                <h5 class="title">{{data.jumboCard.title}}</h5>
+                                <p class="author">{{data.jumboCard.author}}</p>
                             </div>
                             <p class="paragraph">{{data.jumboCard.paragraph}}</p>
                         </div>
@@ -29,8 +29,8 @@
                     <div v-for="(card, i) in data.cards" :key="i" class="custom_card">
                         <img :src="findImg(card.img)" :alt="card.img">
                         <div class="card_text">
-                            <h5>{{card.title}}</h5>
-                            <p>{{card.date}}</p>
+                            <h5 class="title">{{card.title}}</h5>
+                            <p class="date">{{card.date}}</p>
                         </div>
                     </div>
                 </div>
@@ -70,12 +70,12 @@ export default {
             .section_title{
                 padding-bottom: 15px;
 
-                    h1{
+                    .title{
                         @extend %Title;
                         padding-bottom: 5px;
                     }
 
-                    p{
+                    .subtitl{
                        @extend %subtitle_green
                     }
 
@@ -100,7 +100,7 @@ export default {
                     .card_title {
                         padding-top: 25px;
 
-                            h5{
+                            .title{
                                 padding-bottom: 5px;
                                 font-size: 24px;
                             }
@@ -119,13 +119,13 @@ export default {
                     .card_text{
                         padding-top: 20px;
 
-                            h5{
+                            .title{
                                 margin: 0;
                                 padding-bottom: 5px;
                                 font-size: 24px;
                             }
 
-                            p{
+                            .date{
                                 font-size: 14px;
                             }
                     }

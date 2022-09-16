@@ -5,6 +5,8 @@ $green: #49A987;
 $beige: #FEF7E9;
 $grey: #847E77;
 $light-grey: #A6AFAF;
+
+
 $cursive: 'Kristi', cursive;
 $titleFont: 'DM Serif Display', serif; 
 $generalFont: 'DM Sans', serif;
@@ -13,6 +15,12 @@ $generalFont: 'DM Sans', serif;
     font-family: 'DM Serif Display', serif; ;
     font-size: 40px;
     color: black
+}
+
+%paragraph{
+    font-family: 'DM Sans', serif;
+    color: $grey;
+    font-size: 18px;
 }
 
 %orange_button {

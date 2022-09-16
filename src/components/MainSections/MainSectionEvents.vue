@@ -2,8 +2,8 @@
     <div class="mainSection_events">
         <div class="lg_container">
             <div class="section_title text-center">
-                <h1>{{data.title}}</h1>
-                <p>{{data.subTitle}}</p>
+                <h1 class="title">{{data.title}}</h1>
+                <p class="subtitle">{{data.subTitle}}</p>
             </div>
             <div class="d-flex justify-content-betweenp-4">
                 <div v-for="(card, i) in data.cards" :key="i" class="custom_card col-4">
@@ -11,8 +11,8 @@
                         <img :src="findImg(card.img)" alt="">
                     </div>
                     <div class="card_bottom text-center">
-                        <h5>{{card.title}}</h5>
-                        <p>{{card.paragraph}}</p>
+                        <h5 class="title">{{card.title}}</h5>
+                        <p class="paragraph">{{card.paragraph}}</p>
                     </div>
                 </div>
             </div>   
@@ -48,12 +48,12 @@ export default {
 
             .section_title {
                 
-                    h1{
+                    .title{
                         @extend %Title;
                         padding-bottom: 5px;
                     }
 
-                    p{
+                    .subtitle{
                         @extend %subtitle_orange
                     }
             }
@@ -67,7 +67,7 @@ export default {
                         padding: 35px 40px 20px 40px;
                         color: $grey;
 
-                            h5{
+                            .title{
                                 color: black;
                                 font-size: 25px;
                                 padding-bottom: 18px;
@@ -75,7 +75,8 @@ export default {
                                 font-weight: 400;
                             }
 
-                            p{
+                            .paragraph{
+                                @extend %paragraph;
                                 padding-top: 12px;
                             }
                     }

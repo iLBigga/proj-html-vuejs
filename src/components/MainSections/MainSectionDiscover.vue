@@ -10,9 +10,9 @@
                     <div class="custom_card">
                         <img :src="findImg(card.img)" alt="">
                         <div class="d-flex align-items-center flex-column card_text text-center">
-                            <h5>{{card.title}}</h5>
+                            <h5 class="title">{{card.title}}</h5>
                             <hr>
-                            <p>{{card.subTitle}}</p>
+                            <p class="subtitle">{{card.subTitle}}</p>
                         </div>
                     </div>
                 </div>
@@ -53,10 +53,7 @@ export default {
             }
 
             .subtitle{
-                text-transform: uppercase;
-                font-weight: 500;
-                color: $green;
-                letter-spacing: 2px;
+                @extend %subtitle_green
             }
 
             .card_section{
@@ -96,7 +93,7 @@ export default {
                         color: white;
                         z-index: 1;
 
-                            h5{
+                            .title{
                                 font-size: 30px;
                                 font-weight: normal;
                             }
@@ -106,12 +103,13 @@ export default {
                                 margin: 10px;
                             }
 
-                            p{
+                            .subtitle{
                                 color: $orange;
+                                text-transform: none;
+                                font-weight: normal;
+                                letter-spacing: normal;
                             }
                     }
-
-
             }
     }
 </style>

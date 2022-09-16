@@ -6,10 +6,10 @@
             </div>
             <div class="col-6 d-flex flex-column gap-2 right_col align-self-center text-center">
                 <div>
-                    <h1>{{data.title}}</h1>
+                    <h1 class="title">{{data.title}}</h1>
                     <p class="subTitle py-2">{{data.subTitle}}</p>
                 </div>
-                <p class="paragraph px-5">{{data.paragraph}}</p>
+                <p class="paragraph px-4">{{data.paragraph}}</p>
                 <div class="d-flex justify-content-between">
                     <figure v-for="(logo ,i) in data.logos" :key="i"><img :src="findImg(logo)" alt=""></figure>
                 </div>
@@ -40,7 +40,9 @@ export default {
 @import '../../style/general.scss';
 
     .mainSection_audioBook{
-        background-image: url('../../assets/images/banner.jpg');
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.8)),
+        url('../../assets/images/banner.jpg');
         background-size: cover;
         background-position: center center;
         font-family: 'DM Sans', serif;
@@ -53,7 +55,7 @@ export default {
                 padding: 0 100px;
             }
 
-            h1 {
+            .title {
                 @extend %Title;
                 color: white;
             }
@@ -67,7 +69,8 @@ export default {
             }
 
             .paragraph {
-                color: $grey;
+                @extend %paragraph;
+                padding: 0 10px;
             }
 
     }

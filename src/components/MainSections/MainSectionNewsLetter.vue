@@ -33,7 +33,9 @@ export default {
 
     .mainSection_NewsLetter{
         padding: 123px 0 135px 0;
-        background-image: url('../../assets/images/banner-2.jpg');
+        background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.8)),
+        url('../../assets/images/banner-2.jpg');
         background-size: cover;
         background-position: top;
         font-family: 'DM Sans', serif;
@@ -70,8 +72,8 @@ export default {
             }
 
             .paragraph{
-                padding-top: 10px;
-                color: $grey;
+                @extend %paragraph;
+                padding: 10px 15px;
             }
     }
 </style>

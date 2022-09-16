@@ -70,7 +70,7 @@ const criticsCard = [
     },
     {
         title: 'A Unique View On The World',
-        paragraph: 'Nulla quis lorem ut libero malesuda faugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malessuada feug at.',
+        paragraph: 'Donec solicitudin molestie malasuada. Curabitur arcu eratm accumsan id imperdiet ed, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac siam sit amet.',
         author: {
             logo: 'TheGlobe.png',
             name: 'Gerald Mary Maxey,',
@@ -92,7 +92,7 @@ const eventsData = {
         },
         {
             img: 'event-04.jpg',
-            title: 'Meet Greet With Amanda',
+            title: 'Meet & Greet With Amanda',
             paragraph: 'Marius blandit aliquet elit, eget tincidunt nibh pulvinar a. Mariud blandit aliquet elit. eget tincidunt nibh pulvinar a nulla.'
         },
         {
