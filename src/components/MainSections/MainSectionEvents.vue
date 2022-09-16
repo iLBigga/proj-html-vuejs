@@ -54,10 +54,7 @@ export default {
                     }
 
                     p{
-                        text-transform: uppercase;
-                        color: $orange;
-                        letter-spacing: 2px;
-                        font-weight: 500;
+                        @extend %subtitle_orange
                     }
             }
 

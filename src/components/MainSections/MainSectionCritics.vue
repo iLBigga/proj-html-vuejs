@@ -75,10 +75,7 @@ export default {
                     }
 
                     .subtitle {
-                    text-transform: uppercase;
-                    color: $green;
-                    letter-spacing: 2px;
-                    font-weight: 500;
+                        @extend %subtitle_green
                     }
 
                     .button {

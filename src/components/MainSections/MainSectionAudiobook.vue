@@ -63,11 +63,7 @@ export default {
             }
 
             .subTitle {
-                text-transform: uppercase;
-                color: $orange;
-                font-weight: bold;
-
-                letter-spacing: 2px;
+                @extend %subtitle_orange
             }
 
             .paragraph {

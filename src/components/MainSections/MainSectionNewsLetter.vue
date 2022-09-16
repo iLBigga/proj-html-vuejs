@@ -50,14 +50,11 @@ export default {
             }
 
             .subTitle {               
-                text-transform: uppercase;
-                font-weight: bold;
-                letter-spacing: 2px;
-                color: $orange;
+                @extend %subtitle_orange
             }
 
             input {
-                height: 57px;
+                line-height: 45px;
                 border-radius: 5px;
                 border: 0;
             }

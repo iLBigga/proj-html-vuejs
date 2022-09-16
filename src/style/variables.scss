@@ -17,8 +17,22 @@ $generalFont: 'DM Sans', serif;
 
 %orange_button {
     border-radius: 6px;
-    background-color: #F4B429;
+    background-color: $orange;
     padding: 10px 40px;
     color: white;
     border: 0;
+}
+
+%subtitle_orange{
+    text-transform: uppercase;
+    color: $orange;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+%subtitle_green {
+    text-transform: uppercase;
+    color: $green;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
