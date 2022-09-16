@@ -54,7 +54,7 @@ export default {
 
             .subtitle{
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 500;
                 color: $green;
                 letter-spacing: 2px;
             }
@@ -64,9 +64,20 @@ export default {
 
                     .custom_card {
                         position: relative;
-                        border-bottom-left-radius: 20px;  
+                        border-bottom-right-radius: 20px;  
                         height: 520px;       
-                        width: 400px;              
+                        width: 400px;       
+
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.5)),;
+                                border-bottom-right-radius: 100px;
+                            }
                     }
 
                     img{
@@ -83,6 +94,7 @@ export default {
                         right: 0px;
                         left: 0;
                         color: white;
+                        z-index: 1;
 
                             h5{
                                 font-size: 30px;

@@ -1,7 +1,7 @@
 <template>
     <div class="footer_list">
         <div class="xl_container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between main_footer">
                 <!-- LOGO -->
                 <figure>
                     <img :src="logo" alt="">
@@ -59,11 +59,18 @@ export default {
 @import '../../style/general.scss';
 
     .footer_list{
-        background-image: url('../../assets/images/footer-3.jpg');
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.5)),
+        url('../../assets/images/footer-3.jpg');
         background-size: cover;
+        background-position: top right;
         font-family: 'DM Sans', serif;
-        padding: 120px 0 52px 0;
+        padding: 150px 0 50px 0;
         color: white;
+
+        .main_footer{
+            gap: 4rem;
+        }
 
         .about_me{
             padding-right: 150px;
@@ -105,7 +112,7 @@ export default {
         }
 
         .copyright{
-            padding-top: 80px;
+            padding-top: 170px;
         }
     }
     

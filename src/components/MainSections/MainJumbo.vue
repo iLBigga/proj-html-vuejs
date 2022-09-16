@@ -45,12 +45,15 @@ export default {
 <style lang="scss" scoped>
 
 @import '../../style/general.scss';
+@import '../../style/variables.scss';
     
     .jumbo_section {
-        background-image: url('../../assets/images/hero-07-2x.jpg');
+        background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)),
+        url('../../assets/images/hero-07-2x.jpg');
         background-size: cover;
         background-position: center;
-        height: 1000px;
+        height: 1150px;
         
 
             .jumbo_container {

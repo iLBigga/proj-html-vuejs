@@ -50,6 +50,7 @@ export default {
     li {
       border-top: 5px solid transparent;
       height: 100%;
+      font-weight: 500;
 
       a {
         display: block;

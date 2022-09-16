@@ -10,6 +10,7 @@
                     <input class="button" type="button" :value="data.button">
                 </div>
             </div>
+
             <div class="d-flex justify-content-between">
                 <div class="col-6 d-flex gap-2 flex-column left_col">
                     <h2 class="title">{{jumboCard.title}}</h2>
@@ -18,11 +19,13 @@
                     <p>{{jumboCard.secondParagraph}}</p>
                     <p class="author d-flex align-items-center"><img class="logo_publisher" :src="findImg(jumboCard.author.logo)" alt="The Guardian">{{jumboCard.author.name}} <span class="publisher">{{jumboCard.author.publisher}}</span> </p>
                 </div>
+
                 <div class="col-4 d-flex text-center flex-column right_col justify-content-between">
                     <div v-for="(card, i) in cards" :key="i">
                         <div class="card_text">
                             <h4 class="title">{{card.title}}</h4>
                             <p>{{card.paragraph}}</p>
+                            <div class="triangle"></div>
                         </div>
                         <p class="author d-flex align-items-center"><img class="logo_publisher" :src="findImg(card.author.logo)" :alt="card.author.logo">{{card.author.name}} <span class="publisher">{{card.author.publisher}}</span></p>
                     </div>
@@ -102,11 +105,14 @@ export default {
             
             .left_col {
                 // padding: 110px 110px 120px 95px;
-                background-image: url('../../assets/images/testimonial2-2x.jpg');
+                background-image:
+                linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.7)),
+                url('../../assets/images/testimonial2-2x.jpg');
                 background-size: cover;
                 border-bottom-right-radius: 5rem;
                 color: white;
                 padding: 125px 93px;
+
                 
 
                     .title{
@@ -145,7 +151,20 @@ export default {
 
             .card_text {
                 padding: 50px 50px;
-                background-color: $beige;
+                background-color: $beige; 
+                position: relative;                   
+            }
+
+            .triangle{
+                position: absolute;
+                bottom: -11px;
+                left: 20px;
+                widows: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+
+                border-top: 20px solid $beige;
             }
     }
 </style>
