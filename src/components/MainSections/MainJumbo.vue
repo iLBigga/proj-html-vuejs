@@ -1,6 +1,5 @@
 <template>
     <div class="jumbo_section d-flex">
-        
         <div class="jumbo_container d-flex align-items-end">
             <div class="col-10 d-flex flex-column gap-3 text_container">
                 <h1 class="jumbo_title">{{data.title}}</h1>

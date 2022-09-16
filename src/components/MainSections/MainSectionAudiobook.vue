@@ -1,15 +1,19 @@
 <template>
     <div class="mainSection_audioBook">
+
         <div class="sm_container d-flex">
+            <!-- LEFT COL -->
             <div class="col-6 align-self-end text-center">
                 <img class="app_screen" :src="findImg(data.appPreview)" alt="App Preview">
             </div>
+            <!-- RIGHT COL -->
             <div class="col-6 d-flex flex-column gap-2 right_col align-self-center text-center">
                 <div>
                     <h1 class="title">{{data.title}}</h1>
                     <p class="subTitle py-2">{{data.subTitle}}</p>
                 </div>
                 <p class="paragraph px-4">{{data.paragraph}}</p>
+                <!-- LOGO -->
                 <div class="d-flex justify-content-between">
                     <figure v-for="(logo ,i) in data.logos" :key="i"><img :src="findImg(logo)" alt=""></figure>
                 </div>

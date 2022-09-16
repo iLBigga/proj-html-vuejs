@@ -25,6 +25,7 @@
                         <ul>
                             <li v-for="(el, i) in thirdList" :key="i">{{el}}</li>
                         </ul>
+                        <!-- Logo -->
                         <div class="icon d-flex gap-4">
                             <font-awesome-icon icon="fa-brands fa-facebook-f" />
                             <font-awesome-icon icon="fa-brands fa-twitter" />
@@ -33,11 +34,12 @@
                             <font-awesome-icon icon="fa-brands fa-youtube" />
                         </div>
                     </div>
+
                 </div>
             </div>
+            <!-- COPYRIGHT -->
             <p class="copyright text-center">&copy; {{copyright.text}}</p>
-        </div>
-        
+        </div>  
     </div>
 </template>
 

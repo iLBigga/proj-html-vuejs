@@ -1,11 +1,14 @@
 <template>
     <div class="mainSection_NewsLetter d-flex align-items-center">
         <div class="sm_container">
+            <!-- SECTION TITLE -->
             <div class="d-flex flex-column text-center gap-4">
                 <div>
                     <h1 class="title ">{{data.title}}</h1>
                     <p class="subTitle">{{data.subTitle}}</p>
                 </div>
+
+                <!-- INPUT SECTION -->
                 <div class="d-flex justify-content-center gap-3">
                     <input class="text_input" type="text" :placeholder="data.placeholder">
                     <input class="button_input" type="button" :value="data.button">

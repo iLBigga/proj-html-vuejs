@@ -1,6 +1,9 @@
 <template>
     <div class="mainSection_recentArticles">
         <div class="sm_container">
+
+            <!-- SECTION TITLE -->
+
             <div class="d-flex justify-content-between align-items-center section_title">
                 <div>
                     <h1 class="title">{{data.title}}</h1>
@@ -11,7 +14,13 @@
                 </div>         
             </div>
 
+            <!-- MAIN SECTION -->
+
+
             <div class="d-flex justify-content-between gap-5">
+
+                <!-- Left Col -->
+
                 <div class="col-8 col_left">
                     <div class="custom_card">
                         <img :src="findImg(data.jumboCard.img)" alt="data.jumboCard.img">
@@ -25,15 +34,21 @@
                     </div>
                 </div>
 
+                <!-- Right col -->
+
+                <!-- Cards -->
                 <div class="d-flex flex-column col_right gap-5">
                     <div v-for="(card, i) in data.cards" :key="i" class="custom_card">
+                        <!-- Card img -->
                         <img :src="findImg(card.img)" :alt="card.img">
+                        <!-- Card text -->
                         <div class="card_text">
                             <h5 class="title">{{card.title}}</h5>
                             <p class="date">{{card.date}}</p>
                         </div>
                     </div>
                 </div>
+                
             </div>   
         </div>
     </div>
