@@ -4,7 +4,7 @@ const jumboData = {
     title: 'Damon Vaughn',
     paragraph: 'Best-selling author and the most influential public intellectual in the Wwstern world right now.',
     author: '- The New York Times',
-}
+};
 
 // SECTION "About"
 
@@ -12,7 +12,7 @@ const aboutData = {
     title: 'More About Damon Vaughn',
     paragraph: 'Damon Vaughn is a professor of psychology at the Univeristy of Toronto, a clinical psychologist and the author of the multi-million copy bestseller "The stiry of my life."',
     button: 'Meet The Author',
-}
+};
 
 //  SECTION "Newsletter"
 const newsletterData = {
@@ -21,7 +21,50 @@ const newsletterData = {
     placeholder: '    insert your email...',
     button: 'Subscribe',
     paragraph: 'Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.'
+};
+
+// SECTION "Critics"
+
+const criticsData = {
+    title: 'What The Critics Say',
+    subTitle: 'testimonials from around the world',
+    button: 'Read All Testimonials'
 }
 
+const criticsCardJumbo = {
+    title: 'Best Author Of His Generation',
+    subTitle: 'This book will change yout perspective on life',
+    firstParagraph: 'Donec fringilla nunc eu turpis dignissim, at eusmod sapien tincidunt. maecenas eleifend congue cursus. in vitae enim quis sam pharetra. Curabitur arcu erat, accumsan id imperdiet et, portittor at sem.',
+    secondParagraph: 'Donec fringilla nunc eu turpis dignissim, at eusmod sapien tincidunt. maecenas eleifend congue cursus. in vitae enim quis sam pharetra. Curabitur arcu erat, accumsan id imperdiet et, portittor at sem.',
+    author: {
+        logo: 'NYtimes.png',
+        name: 'Justine Kilpatrick',
+        publisher: 'The New York Times',
+    }
+}
 
-export {jumboData, aboutData, newsletterData}
+const criticsCard = [
+    {
+        title: 'A True Masterpiece, Bravo!',
+        paragraph: 'Nulla quis lorem ut libero malesuda faugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malessuada feug at.',
+        author: {
+            logo: 'TheGuardian.png',
+            name: 'Gerald Hendley,',
+            publisher: 'The guardian',
+        }
+        
+    },
+    {
+        title: 'A Unique View On The World',
+        paragraph: 'Nulla quis lorem ut libero malesuda faugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malessuada feug at.',
+        author: {
+            logo: 'TheGlobe.png',
+            name: 'Gerald Mary Maxey,',
+            publisher: 'The Globe And Mail',
+        }
+    },
+];
+
+
+
+export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard}

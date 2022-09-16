@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <FooterList/>
+        <FooterList :logo="logo" :firstList="aboutMeList" :secondList="usefulLinks" :thirdList="contactList" :copyright="copyright"/>
     </footer>
 </template>
 
@@ -9,10 +9,23 @@
 
 import FooterList from '../components/FooterSections/FooterList.vue'
 
+import {aboutMeList, usefulLinks, contactList, copyright} from '../footerMyData.js'
+
 export default {
     name: 'FooterComponent',
     components: {
         FooterList,
+    },
+    data() {
+        return {
+            // LOGO
+            logo: require('../assets/images/author-logo-round-small.png'),
+            // LIST
+            aboutMeList,
+            usefulLinks,
+            contactList,
+            copyright,
+        }
     }
 }
 </script>

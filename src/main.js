@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faAmazon } from '@fortawesome/free-brands-svg-icons'
 import { faApple } from '@fortawesome/free-brands-svg-icons'
 
@@ -22,6 +23,7 @@ Vue.use(IconsPlugin)
 library.add(faCartShopping)
 library.add(faArrowLeft)
 library.add(faArrowRight)
+library.add(faAngleRight)
 library.add(faAmazon)
 library.add(faApple)
 /* add font awesome icon component */

@@ -4,7 +4,7 @@
         <MainSectionAbout :data="aboutData" />
         <MainSectionPartner :data="partnerData"/>
         <MainSectionAudiobook :data="audioBookData"/>
-        <MainSection4/>
+        <MainSectionCritics :data="criticsData" :jumboCard="criticsCardJumbo" :cards="criticsCard"/>
         <MainSection5/>
         <MainSectionNewsLetter :data="newsletterData"/>
         <MainSection7/>
@@ -19,14 +19,14 @@ import MainJumbo from './MainSections/MainJumbo.vue';
 import MainSectionAbout from './MainSections/MainSectionAbout.vue'
 import MainSectionPartner from './MainSections/MainSectionPartner.vue'
 import MainSectionAudiobook from './MainSections/MainSectionAudiobook.vue'
-import MainSection4 from './MainSections/MainSection4.vue'
+import MainSectionCritics from './MainSections/MainSectionCritics.vue'
 import MainSection5 from './MainSections/MainSection5.vue'
 import MainSectionNewsLetter from './MainSections/MainSectionNewsLetter.vue'
 import MainSection7 from './MainSections/MainSection7.vue'
 import MainSection8 from './MainSections/MainSection8.vue'
 
 
-import {jumboData, aboutData, newsletterData} from '../mainMyData'
+import {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard} from '../mainMyData'
 
 export default {
     name: 'MainComponent',
@@ -35,7 +35,7 @@ export default {
         MainSectionAbout,
         MainSectionPartner,
         MainSectionAudiobook,
-        MainSection4,
+        MainSectionCritics,
         MainSection5,
         MainSectionNewsLetter,
         MainSection7,
@@ -70,13 +70,15 @@ export default {
                 }
             },
 
+            // SECTION "Critics"
+            criticsData: criticsData,
+            criticsCardJumbo: criticsCardJumbo,
+            criticsCard: criticsCard,
+
             //SECTION "Newsletter"
             newsletterData: newsletterData,
-
-
-
         }
-    }
+    },
 }
 </script>
 

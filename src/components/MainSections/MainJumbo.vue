@@ -27,9 +27,6 @@ export default {
         ShopComponent,
     },
     props: {
-        // title: String,
-        // paragraph: String,
-        // paragraphAuthor: String,
         data: Object,
     },
     data() {
