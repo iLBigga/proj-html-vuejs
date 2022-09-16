@@ -62,7 +62,7 @@ export default {
         padding: 77px 0px 100px 0px;
         font-family: $generalFont;
 
-            h1, h2, h4{
+            h2, h4{
                 font-family: $titleFont;
             }
 
@@ -70,6 +70,7 @@ export default {
                 padding-bottom: 15px;
 
                 .title{
+                        @extend %Title;
                         padding-bottom: 5px;
                     }
 
@@ -81,11 +82,7 @@ export default {
                     }
 
                     .button {
-                        padding: 10px 40px;
-                        border-radius: 10px;
-                        background-color: $orange;
-                        color: white;
-                        border: 0;
+                        @extend %orange_button
                     }
             }
 

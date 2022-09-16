@@ -49,8 +49,7 @@ export default {
             .section_title {
                 
                     h1{
-                        font-family: $titleFont;
-                        color: black;
+                        @extend %Title;
                         padding-bottom: 5px;
                     }
 

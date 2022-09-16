@@ -71,7 +71,7 @@ export default {
                 padding-bottom: 15px;
 
                     h1{
-                        font-family: $titleFont;
+                        @extend %Title;
                         padding-bottom: 5px;
                     }
 

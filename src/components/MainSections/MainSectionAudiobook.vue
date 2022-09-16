@@ -54,7 +54,7 @@ export default {
             }
 
             h1 {
-                font-family: 'DM Serif Display', serif;
+                @extend %Title;
                 color: white;
             }
 

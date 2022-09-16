@@ -48,7 +48,7 @@ export default {
         font-family: $generalFont;
 
             .title{
-                font-family: $titleFont;
+                @extend %Title;
                 padding-bottom: 5px;
             }
 

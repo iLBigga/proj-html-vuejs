@@ -44,7 +44,8 @@ export default {
             }
 
             .title{
-                font-family: 'DM Serif Display', serif;  
+                @extend %Title;
+                color: white;
                 padding-bottom: 20px;            
             }
 

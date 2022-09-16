@@ -8,3 +8,17 @@ $light-grey: #A6AFAF;
 $cursive: 'Kristi', cursive;
 $titleFont: 'DM Serif Display', serif; 
 $generalFont: 'DM Sans', serif;
+
+%Title{
+    font-family: 'DM Serif Display', serif; ;
+    font-size: 40px;
+    color: black
+}
+
+%orange_button {
+    border-radius: 6px;
+    background-color: #F4B429;
+    padding: 10px 40px;
+    color: white;
+    border: 0;
+}
