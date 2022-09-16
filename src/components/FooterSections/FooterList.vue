@@ -24,7 +24,13 @@
                     <ul>
                         <li v-for="(el, i) in thirdList" :key="i">{{el}}</li>
                     </ul>
-                    <div>icon</div>
+                    <div class="icon d-flex gap-4">
+                        <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                        <font-awesome-icon icon="fa-brands fa-twitter" />
+                        <font-awesome-icon icon="fa-brands fa-instagram" />
+                        <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+                        <font-awesome-icon icon="fa-brands fa-youtube" />
+                    </div>
                 </div>
             </div>
             <p class="copyright text-center">&copy; {{copyright.text}}</p>
@@ -92,6 +98,10 @@ export default {
                 a{
                     padding-left: 1.1rem;
                 }
+        }
+
+        .icon{
+            color: lightgray;
         }
 
         .copyright{

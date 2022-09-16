@@ -114,8 +114,34 @@ const discoverData = {
     ],
 };
 
+// SECTION "RecentArticles"
+
+const articlesData = {
+    title: 'Recent Articles',
+    subTitle: 'read the latest entries',
+    button: 'All Articles',
+    jumboCard: {
+        img: '20-Tips-scaled.jpg',
+        title: '20 Creativity Tips',
+        author: 'By admin | October 24th, 2019 | Categories Event, Tip & Tricks',
+        paragraph: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velic neque, auctor sit amet aliquam vel, ullamcorper sit amet.',
+    },
+    cards: [
+        {
+            img: 'thumb-13.jpg',
+            title: 'What\'s On Your Boklist?',
+            date: 'October 24th, 2019 | 0 Comments',
+        },
+        {
+            img: 'thumb-08.jpg',
+            title: 'Istanbul Travel Guide',
+            date: 'October 24th, 2019 | 0 Comments',
+        },
+    ],
+};
 
 
 
 
-export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData}
+
+export {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData, articlesData}

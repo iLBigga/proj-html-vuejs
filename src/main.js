@@ -12,6 +12,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faAmazon } from '@fortawesome/free-brands-svg-icons'
 import { faApple } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+
+
+
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -26,6 +34,12 @@ library.add(faArrowRight)
 library.add(faAngleRight)
 library.add(faAmazon)
 library.add(faApple)
+library.add(faFacebookF)
+library.add(faTwitter)
+library.add(faInstagram)
+library.add(faLinkedinIn)
+library.add(faYoutube)
+
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

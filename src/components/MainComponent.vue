@@ -8,7 +8,7 @@
         <MainSectionEvents :data="eventsData"/>
         <MainSectionNewsLetter :data="newsletterData"/>
         <MainSectionDiscover :data="discoverData"/>
-        <MainSection8/>
+        <MainSectionRecentArticles :data="articlesData"/>
     </main>
 </template>
 
@@ -23,10 +23,10 @@ import MainSectionCritics from './MainSections/MainSectionCritics.vue'
 import MainSectionEvents from './MainSections/MainSectionEvents.vue'
 import MainSectionNewsLetter from './MainSections/MainSectionNewsLetter.vue'
 import MainSectionDiscover from './MainSections/MainSectionDiscover.vue'
-import MainSection8 from './MainSections/MainSection8.vue'
+import MainSectionRecentArticles from './MainSections/MainSectionRecentArticles.vue'
 
 
-import {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData} from '../mainMyData'
+import {jumboData, aboutData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData, articlesData} from '../mainMyData'
 
 export default {
     name: 'MainComponent',
@@ -39,7 +39,7 @@ export default {
         MainSectionEvents,
         MainSectionNewsLetter,
         MainSectionDiscover,
-        MainSection8,
+        MainSectionRecentArticles,
     },
     data() {
         return {
@@ -83,6 +83,9 @@ export default {
 
             // SECTION "Discover"
             discoverData: discoverData,
+
+            // SECTION "RecentArticles"
+            articlesData: articlesData,
         }
     },
 }

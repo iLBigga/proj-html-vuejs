@@ -54,7 +54,7 @@ export default {
 
             .subtitle{
                 text-transform: uppercase;
-                font-weight: 500;
+                font-weight: 700;
                 color: $green;
                 letter-spacing: 2px;
             }
