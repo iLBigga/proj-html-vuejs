@@ -42,7 +42,7 @@ const audioBookData = {
 const criticsData = {
     title: 'What The Critics Say',
     subTitle: 'testimonials from around the world',
-    button: 'Read All Testimonials'
+    button: 'Read All Testimonials',
 };
 
 const criticsCardJumbo = {
