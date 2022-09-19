@@ -26,7 +26,20 @@ import MainSectionDiscover from './MainSections/MainSectionDiscover.vue'
 import MainSectionRecentArticles from './MainSections/MainSectionRecentArticles.vue'
 
 
-import {jumboData, aboutData, partnerData, audioBookData, newsletterData, criticsData, criticsCardJumbo, criticsCard, eventsData, discoverData, articlesData} from '../mainMyData'
+import{
+        jumboData, 
+        aboutData, 
+        partnerData, 
+        audioBookData, 
+        newsletterData, 
+        criticsData, 
+        criticsCardJumbo, 
+        criticsCard, 
+        eventsData, 
+        discoverData, 
+        articlesData
+    } 
+from '../mainMyData.js';
 
 export default {
     name: 'MainComponent',
@@ -73,7 +86,7 @@ export default {
             articlesData: articlesData,
         }
     },
-}
+};
 </script>
 
 

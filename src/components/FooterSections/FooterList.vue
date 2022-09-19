@@ -4,7 +4,9 @@
             <div class="d-flex justify-content-between main_footer">
                 <!-- LOGO -->
                 <figure>
+
                     <img :src="logo" alt="">
+                    
                 </figure>
                 <div class="d-flex">
                     <!-- ABOUT ME -->
@@ -30,9 +32,11 @@
                             <li v-for="(el, i) in secondList" :key="i">
 
                                 <font-awesome-icon icon="fa-solid fa-angle-right" />
+
                                 <a href="#">
                                     {{el}}
                                 </a>
+
                             </li>
                             
                         </ul>
