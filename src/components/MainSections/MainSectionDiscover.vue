@@ -2,7 +2,7 @@
     <div class="mainSection_discover">
         <div class="sm_container">    
         <!-- SECTION TITLE -->
-            <div class="d-flex flex-column text-center">
+            <div class="section_title d-flex flex-column text-center">
 
                 <h1 class="title">
                     {{data.title}}
@@ -70,13 +70,17 @@ export default {
         padding-bottom: 110px;
         font-family: $generalFont;
 
-            .title{
-                @extend %Title;
-                padding-bottom: 5px;
-            }
-
-            .subtitle{
-                @extend %subtitle_green
+        
+            .section_title{
+                
+                .title{
+                    @extend %Title;
+                    padding-bottom: 5px;
+                }
+    
+                .subtitle{
+                    @extend %subtitle_green
+                }
             }
 
             .card_section{
