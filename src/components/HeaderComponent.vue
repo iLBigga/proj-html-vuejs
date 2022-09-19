@@ -37,6 +37,6 @@ export default {
 <style lang="scss">
     @import '../style/general.scss';
     header {
-        font-family: 'DM Sans', sans-serif;
+        font-family: $generalFont;
     }
 </style>
