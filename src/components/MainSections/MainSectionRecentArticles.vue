@@ -115,7 +115,7 @@ export default {
                         padding-bottom: 5px;
                     }
 
-                    .subtitl{
+                    .subtitle{
                        @extend %subtitle_green
                     }
 
